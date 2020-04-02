@@ -1,0 +1,15 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.exe" : true,
+        "**/*.a" : true,
+        "**/*.dll" : true,
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+
+}

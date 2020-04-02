@@ -1,0 +1,27 @@
+{
+    "configurations": [{
+        "name": "MinGW",
+        "includePath": [
+            "${workspaceFolder}\\**",
+            "C:/Users/ENNBO/Documents/SDL2/i686-w64-mingw32/include/"
+        ],
+        "defines": [
+            "_DEBUG",
+            "UNICODE",
+            "_UNICODE"
+        ],
+        "compilerPath": "C:/MinGW/bin/gcc.exe",
+        "intelliSenseMode": "gcc-x64",
+        "browse": {
+            "path": [
+                "${workspaceFolder}\\**",
+                "C:/Users/ENNBO/Documents/SDL2/i686-w64-mingw32/include/"
+            ],
+            "limitSymbolsToIncludedHeaders": false,
+            "databaseFilename": ""
+        },
+        "cStandard": "c11",
+        "cppStandard": "c++17"
+    }],
+    "version": 4
+}

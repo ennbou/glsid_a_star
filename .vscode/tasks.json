@@ -1,0 +1,70 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "gcc ${relativeFile} ",
+            "args": [
+                "-g",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "venteAll",
+            "type": "shell",
+            "command": "gcc ${fileDirname}/*.c",
+            "args": [
+                "-g",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "sdl",
+            "type": "shell",
+            "command": "gcc ${relativeFile}",
+            "args": [
+                "-g",
+                //"-Wl,-subsystem,windows",
+                "-Wall",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-L",
+                "C:/Users/ENNBO/Documents/SDL2/i686-w64-mingw32/lib",
+                "-I",
+                "C:/Users/ENNBO/Documents/SDL2/i686-w64-mingw32/include",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2_image",
+                "-lSDL2_mixer",
+                "-lpthread",
+                "-lSDL2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
